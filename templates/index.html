@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Are you Worthy Enough to Get a Loan </title>
+		<!-- <script src= "https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<script src="index.js"></script>
+		<link rel="stylesheet" href="insex.css"> -->
+		</head>
+		<body>
+			<div class="login">
+				<form  action="{{ url_for('predict')}}"method="post">
+					<h2>Please select your gender</h2>
+						<input type="radio" id="1" name="gender" value = "1"required/>
+                		<label for="Male">Male</label><br>
+						<input type="radio" id = "0" name="gender" value = "0"/>
+                        <label for="Female">Female</label><br>
+					<h2>Are you Married ?</h2>
+						<input type="radio" id = "1" name="Married" value = "1"required/>Yes<br>
+						<input type="radio" id = "0" name="Married" value = "0"/> No<br>
+					<h2> How's your Education ?</h2>
+						<input type="radio" id = "1" name="Education" value = "1"required/>Graduated<br>
+                
+						<input type="radio" id = "0" name="Education" value = "0"/> Not Graduated
+                
+						<br />
+					<h2>Are you self employed ?</h2>
+						<input type="radio" id = "1" name="Self Employed" value = "1" required/>Yes<br>
+               
+						<input type="radio" id = "0" name="Self Employed" value = "0"/> No
+               
+						<br />
+					<h2> How much your income ?</h2>
+					<input type="text" name="ApplicantIncome"  placeholder="Applicant Income" required="required" />
+					<br />
+					<h2> How much your Partner income ?</h2>
+					<input type="text" name="CoapplicantIncome"  placeholder="Coapplicant Income" required="required" />
+					<br />
+					<h2> Loan Amount</h2>
+					<input type="text" name="LoanAmount"  placeholder="Loan Amount" required="required" />
+					<br />
+					<h2> Loan Amount Term</h2>
+					<input type="text" name="Loan_Amount_Term"  placeholder="Loan Amount Term" required="required" />
+					<br />
+					<h2>Credit History</h2>
+					<input type="radio" name="Credit History" value = "1"required/>Yes
+               
+					<input type="radio" name="Credit History" value = "0"required/> No
+               
+					<br />
+					<h2> Choose your Property  Area</h2>
+					<input type="radio" id="0" name="PropertyArea" value="0"required>
+					<label for="Rural">Rural</label><br>
+					<input type="radio" id="1" name="PropertyArea" value="1">
+					<label for="Semiurban">Semiurban</label><br>
+					<input type="radio" id="2" name="PropertyArea" value="2">
+					<label for="Urban">Urban</label><br>
+					<h2> How Many Dependents Do You Have</h2>
+					<input type="radio" id="0" name="Dependents" value="0"required>
+					<label for="0">0</label><br>
+					<input type="radio" id="1" name="Dependents" value="1">
+					<label for="1">1</label><br>
+					<input type="radio" id="2" name="Dependents" value="2">
+					<label for="2">2</label><br>
+					<input type="radio" id="3+" name="Dependents" value="3">
+					<label for="3+">3+</label><br>
+					<button type="submit" class= "btn btn-primary btm-block btn-large">Submit</button>
+				</form>
+				<br>
+				<br>
+                    {{output}}
+    
+					</div>
+				</body>
+			</html>
