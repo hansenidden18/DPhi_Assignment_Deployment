@@ -22,4 +22,4 @@ You can access the notebook in [here](Notebook/DPhi_Assignment_3_Loan.ipynb)
 
 ## Web Deployment
 
-You can access the web deployment in [here](templates/index.html]
+You can access the web deployment in [here](templates/index.html)
