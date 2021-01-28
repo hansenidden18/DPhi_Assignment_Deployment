@@ -4,6 +4,10 @@
 -  Training dataset  : [Training Dataset](https://raw.githubusercontent.com/dphi-official/Datasets/master/Loan_Data/loan_train.csv)
 -  Testing dataset   : [Testing Dataset](https://raw.githubusercontent.com/dphi-official/Datasets/master/Loan_Data/loan_test.csv)
 
+## Web link
+
+[Loan Prediction](https://dphiloanmodel.herokuapp.com/)
+
 ## Project Description
 
 In this project i make a classification model for predicting if a user can be granted a loan or not. 
